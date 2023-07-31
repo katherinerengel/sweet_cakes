@@ -1,0 +1,102 @@
+.container {
+   height: 100vh;
+   background: linear-gradient(180deg, #83D9DC 0%, #B0EFEF 53.22%);
+   background-size: cover;
+   background-blend-mode: overlay;
+}
+
+ .banda{
+   width: 100%;
+   position: absolute;
+   top: 30px;
+   background-color: #F498C2;
+ }
+
+ .frase {
+   width: 100%;
+   position: absolute;
+   top: 43px;
+   text-align: center;
+ }
+
+ .wrapper-principal {
+   width: 100%;
+   display: flex;    
+   flex-wrap: wrap;
+   align-items: center;
+   text-align: center;
+ }
+
+
+
+ .lateral-izquierdo img {
+   width: 40%;
+ }
+
+ .lateral-derecho img {
+   width: 70%;
+ }
+
+ .boton {
+   position: absolute;
+   bottom: 60px;
+   display: flex;
+   width: 100%;
+   justify-content: center;
+ }
+
+ .boton button {
+   border: none;
+   border-radius: 5px;
+   background-color: #F498C2;
+   color: #fafafa;
+   cursor: pointer;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+ }
+
+ /* para desktop */
+@media (min-width: 1450px) {
+
+    .banda {
+      height: 75px;
+    }
+    .frase img {
+      width: 35%;
+     }
+    .lateral-izquierdo, .lateral-derecho {
+      width: 50%;
+     }
+    .lateral-derecho img {
+      float: left;
+     }
+     .wrapper-principal {
+      padding-top: 120px;
+     }
+
+     .boton button {
+      padding: 4px 30px;
+      font-size: 16px;
+    }
+}
+
+/* para mobile */
+@media (max-width: 500px) {
+
+    .banda {
+        height: 50px;
+    }
+    .frase img {
+        width: 60%;
+     }
+    .lateral-izquierdo, .lateral-derecho {
+        width: 100%;
+     }
+     .wrapper-principal {
+        padding-top: 160px;
+     }
+
+     .boton button {
+      padding: 8px 30px;
+      font-size: 14px;
+    }
+}

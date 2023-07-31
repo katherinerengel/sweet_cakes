@@ -1,0 +1,224 @@
+.container {
+    height: 100vh;
+    background: linear-gradient(180deg, #F498C2 0%, #FFE5F1 50%);
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+ 
+ .logo {
+    position: absolute;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 30%;
+
+}
+
+.img-central {
+    position: absolute;
+    text-align: center;
+}
+
+.wrapper-1 {
+    width: 100%;
+    display: flex;    
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+}
+.wrapper-2 {
+    width: 100%;
+    display: flex;    
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+}
+
+.boton button {
+    border: none;
+    border-radius: 10px;
+    background-color: #F498C2;
+    color: #fafafa;
+    cursor: pointer;
+    width: 305px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 500;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.img-final {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.carrito img {
+    z-index: 1100;
+}
+
+.carrito img {
+    width: 35px;
+}
+
+.carrito .div-carrito {
+    position: relative;
+    padding: 0.5rem;
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrito .div-carrito .div-cant {
+    position: absolute;
+    background-color: red;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1101;
+}
+
+.carrito .div-carrito .div-cant .span-cant{
+    font-weight: 500;
+    color: white;
+}
+
+
+   /* para desktop */
+@media (min-width: 1450px) {
+    .logo {
+        left: 60px;
+        top: 30px;
+    }
+    .img-central {
+        top: 30px;
+    }
+    
+    .img-central img {
+        width: 25%;
+    }
+    .carrito {
+        position: absolute;
+        right: 60px;
+        top: 65px;
+    }
+    
+    .boton-izquierdo, .boton-central, .boton-derecho {
+        width: 33.3%;
+    }
+    .wrapper-1 .boton-izquierdo {
+        text-align: right;
+    }
+    
+    .wrapper-1 .boton-derecho {
+        text-align: left;
+    }
+    .boton-izquierdo2, .boton-derecho2 {
+        width: 50%;
+    }
+    .wrapper-1 {
+        top: 400px;
+    }
+    .wrapper-2 {
+        top: 480px;
+    }      
+    .btn-izq button {
+        float: right;
+        margin-right: 50px;
+    }
+    
+    
+    .btn-der button {
+        float:left;
+        margin-left: 50px;
+    }
+
+    .img-final {
+        bottom: 50px;
+    }
+    
+    .img-final img {
+        width: 45%;
+    }
+
+    .boton button {
+        padding: 10px 30px;
+        font-size: 20px;
+    }
+
+    .carrito  .div-carrito .div-cant {
+        width: 15px;
+        height: 15px;
+        top: 3px;
+        right: 3px;
+    }
+
+    .carrito  .div-carrito .div-cant .span-cant{
+        font-size: 11px;
+    }
+    
+}
+
+/* para mobile */
+@media (max-width: 500px) {
+    .logo {
+        left: 20px;
+        top: 20px;
+    }
+    .img-central {
+        top: 110px;
+    }
+    
+    .img-central img {
+        width: 65%;
+    }
+
+    .carrito {
+        position: absolute;
+        right: 20px;
+        top: 40px;
+    }
+    
+
+    .boton-izquierdo, .boton-central, .boton-derecho {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .boton-izquierdo2, .boton-derecho2 {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .wrapper-1 {
+        top: 340px;
+    }
+    .wrapper-2 {
+        top: 490px;
+    }   
+    .img-final {
+        bottom: 25px;
+    }
+    
+    .img-final img {
+        width: 85%;
+    }
+    .boton button {
+        padding: 8px 30px;
+        font-size: 16px;
+    }
+
+    .carrito  .div-carrito .div-cant {
+        width: 15px;
+        height: 15px;
+        top: 2px;
+        right: 2px;
+    }
+
+    .carrito  .div-carrito .div-cant .span-cant{
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,3 @@
+{
+    "mensajeWhatsapp": "_%C2%A1Hola!%20Te%20paso%20el%20resumen%20de%20mi%20consulta%3A_%0A%0A*_Tus%20datos%20de%20contacto_*%0A*Nombre%20y%20apellido%3A*%20(@nombre)%0A*Tel%C3%A9fono%20de%20contacto%3A*%20(@telefono)%0A*Fecha%20de%20entrega%3A*%20(@fecha)%0A*Hora%20de%20entrega%3A*%20(@hora)%0A%0A*_Mi%20pedido%20es%3A_*(@detalle)%0A%0A*Necesitas%20delivery%3A*%20(@isDelivery)%0A%0A(@delivery)_Espero%20tu%20respuesta%20para%20confirmar%C2%A0la%C2%A0consulta_"
+}

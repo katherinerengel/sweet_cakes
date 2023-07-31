@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-grid.css">
+    <link rel="stylesheet" href="css/style-pasapalos.css">
+    <link rel="stylesheet" href="css/style-select.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/redirect.js"></script>
+    <script type="module" src="js/moduleExport.js"></script>
+    <script type="module" src="js/funtionExport.js"></script>
+    <script src="js/select-multiple.js"></script>
+    <title>Mafer Sweet Cakes - Pasapalos</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="carrito-rosa" onclick="btnCarrito(event)">
+                <div class=" div-carrito">
+                    <img src="img/carrito/carrito.png" alt="">
+                    <div class="div-cant">
+                        <span class="span-cant">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="left-side">
+                <div class="wrapper-row">
+                    <div class="col-left">
+                        <div class="title-cakes">
+                            <img src="img/pasapalos/titulopasapalos.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-right">
+                        <div class="photos">
+                            <div class="photo1">
+                                <img src="img//pasapalos/pasapalos3.jpg" alt="">
+                            </div>
+                            <div class="photo2">
+                                <img src="img/pasapalos/pasapalos1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="logo">
+                    <img src="img/cakes-per/logo.png" alt="">
+                </div>
+                <div class="content-mobile">
+                    <div class="banda"></div>
+                    <div class="photos-mobile">
+                        <div class="photo1-mobile">
+                            <img src="img/pasapalos/pasapalos3.jpg" alt="">
+                        </div>
+                        <div class="photo2-mobile">
+                            <img src="img/pasapalos/pasapalos1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="subtitle-cakes">
+                    <span class="span-title">Pasapalos</span>
+                    <span>Disfruta de nuestros pequeños bocados.</span>
+                </div>
+                <div class="wrapper-select">
+
+                    <div class="wrapper-cajas row-kt">
+                        <div class="col-ktd-85  col-ktm-100">
+                            <div class="row-kt">
+                                <div class="col-ktd-45 col-ktm-100">
+                                    <div class="div-select">
+                                        <label for="cajas-saladas">Nuestras cajas saladas</label>
+                                        <select name="select-salados"  onchange="changeSelectMax(event, 'select-salados')" data-field="muestra">
+                                            <option value="1">Caja de 25 unidades</option>
+                                            <option value="2">Caja de 50 unidades</option>
+                                            <option value="4">Caja de 100 unidades</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-ktd-55 col-ktm-100">
+                                    <div class="div-select">
+                                        <label for="cajas-saladas">Opciones</label>
+                                        <kt-select id="select-salados" multiple data-content="" placeholder="Selecionar...">
+                                            <kt-select-value></kt-select-value>
+                                            <kt-select-icon>
+                                                <i class="fi fi-bs-angle-small-down"></i>
+                                            </kt-select-icon>
+                                            <kt-options class="close">
+                                                <kt-option key="1">Tequeños de queso</kt-option>
+                                                <kt-option key="2">Empanaditas de queso</kt-option>
+                                                <kt-option key="3">Empanaditas de pollo</kt-option>
+                                                <kt-option key="4">Empanaditas de carne molida</kt-option>
+                                                <kt-option key="5">Empanaditas de carne mechada</kt-option>
+                                                <kt-option key="6">Pastelitos de queso</kt-option>
+                                                <kt-option key="7">Pastelitos de pollo</kt-option>
+                                                <kt-option key="8">Pastelitos de carne molida</kt-option>
+                                                <kt-option key="9">Pastelitos de carne mechada</kt-option>
+                                                <kt-option key="10">Bolitas de carne</kt-option>
+                                                <kt-option key="11">Mini pizzas</kt-option>
+                                                <kt-option key="12">Mini sandwich</kt-option>
+                                            </kt-options>
+                                        </kt-select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-ktd-15 col-ktm-100">
+                            <div class="div-select div-agregar">
+                                <label for="">Agregar</label>
+                                <img class="img-add" src="img/postres/plus-circle.png" alt="" onclick="btnAnadirPasapalos('select-salados', 'mf-tbody')">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wrapper-cajas row-kt">
+                        <div class="col-ktd-85  col-ktm-100">
+                            <div class="row-kt">
+                                <div class="col-ktd-45 col-ktm-100">
+                                    <div class="div-select">
+                                        <label for="cajas-dulces">Nuestras cajas dulces</label>
+                                        <select name="select-dulces"  onchange="changeSelectMax(event, 'select-dulces')" data-field="muestra">
+                                            <option value="1" selected>Caja de 12 unidades</option>
+                                            <option value="2" >Caja de 24 unidades</option>
+                                            <option value="5">Caja de 50 unidades</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-ktd-55 col-ktm-100">
+                                    <div class="div-select">
+                                        <label for="cajas-dulces">Opciones</label>
+                                        <kt-select id="select-dulces" multiple data-content="" placeholder="Selecionar...">
+                                            <kt-select-value></kt-select-value>
+                                            <kt-select-icon>
+                                                <i class="fi fi-bs-angle-small-down"></i>
+                                            </kt-select-icon>
+                                            <kt-options class="close">
+                                                <kt-option key="1">Donas</kt-option>
+                                                <kt-option key="2">Bombas</kt-option>
+                                                <kt-option key="3">Brownies</kt-option>
+                                                <kt-option key="4">Cupcakes</kt-option>
+                                                <kt-option key="5">Alfajoles</kt-option>
+                                                <kt-option key="6">Galletas</kt-option>
+                                                <kt-option key="7">Mini quesillos</kt-option>
+                                                <kt-option key="8">Shots de pie de parchita</kt-option>
+                                                <kt-option key="9">Shots de pie de limón</kt-option>
+                                            </kt-options>
+                                        </kt-select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-ktd-15 col-ktm-100">
+                            <div class="div-select div-agregar">
+                                <label for="">Agregar</label>
+                                <img class="img-add" src="img/postres/plus-circle.png" alt=""  onclick="btnAnadirPasapalos('select-dulces', 'mf-tbody')">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wrapper-cajas row-kt">
+                        <div class="col-ktd-85  col-ktm-100">
+                            <div class="row-kt">
+                                <div class="col-ktd-45 col-ktm-100">
+                                    <div class="div-select">
+                                        <label for="cajas-premium">Nuestras cajas premium</label>
+                                        <select class="select-premium-cant" name="select-premium"  data-field="cantidad" onchange="changeSelectPremiun(this)">
+                                            <option value="12" selected>Caja de 12 unidades</option>
+                                            <option value="24" >Caja de 24 unidades</option>
+                                            <option value="50">Caja de 50 unidades</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-ktd-55 col-ktm-100">
+                                    <div class="div-select div-optiones">
+                                        <label for="cajas-premium">Opciones</label>
+                                        <select class="select-premium" name="select-premium" data-field="detalle" >
+                                            <option value="1" unidades="12-24-50">Hamburguesas</option>
+                                            <option value="2" unidades="24-50">Mini perros</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-ktd-15 col-ktm-100">
+                            <div class="div-select div-agregar">
+                                <label for="">Agregar</label>
+                                <img class="img-add" src="img/postres/plus-circle.png" alt=""  onclick="btnAnadirPremium('select-premium', 'mf-tbody')">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pasapalo-tabla">
+                        <table style="border-collapse: collapse;">
+                            <thead> 
+                                <tr>
+                                    <th class="th-desc">Cajas</th>
+                                    <th class="th-desc">Descripción</th>
+                                    <th style="min-width: 7rem;">Cantidad</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="mf-tbody">
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="pasapalo-grid">
+                        <div class="grid-kt ">
+                            <div class="grid-header">
+                                <div class="colm-1">Cajas</div>
+                                <div class="colm-2">Acción</div>
+                            </div>
+                            <div id="mf-tbody-mobile" class="grid-body">
+    
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="div-button">
+                            <button id="btn-return">Volver</button>
+                            <button id="btn-add"   onclick="btnGuardarPasapalos(event)">Añadir al carrito</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(()=>{
+            pedidosPasapalos.initSelectPremium();
+            pedidos.initPedido('Pasapalos', true);
+        })
+    </script>
+</body>
+</html>

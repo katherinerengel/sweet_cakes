@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-grid.css">
+    <link rel="stylesheet" href="css/style-tucarrito.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/redirect.js"></script>
+    <script type="module" src="js/moduleExport.js"></script>
+    <script type="module" src="js/funtionExport.js"></script>
+    <title>Mafer Sweet Cakes - Tu Carrito</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper-carrito">
+            <div class="wrapper-izq">
+                <div class="title">
+                    <img src="img/carrito/tucarrito.png" alt="">
+                </div>
+                <div class="img-car">
+                    <img src="img/carrito/carrito.png" alt="">
+                </div>
+            </div>
+            <div class="wrapper-der">
+                <div class="logo">
+                    <img src="img/cakes-per/logo.png" alt="">
+                </div>
+                <div class="container-table">
+                    <div class="title-table">
+                        <span>Verifica tu pedido</span>
+                    </div>
+                    <div class="carrito-tabla">
+                        <table style="border-collapse: collapse;">
+                            <thead> 
+                                <tr>
+                                    <th class="columna-oculta">Tipo</th>
+                                    <th>Descripción</th>
+                                    <th  style="min-width: 7rem;">Cantidad</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="mf-tbody">
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="carrito-grid">
+                        <div class="grid-kt">
+                            <div class="grid-header">
+                                <div class="colm-1">Tipo</div>
+                                <div class="colm-2">Acción</div>
+                            </div>
+                            <div id="mf-tbody-mobile" class="grid-body">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="div-button">
+                    <button id="btn-return" class="button-izq">Seguir comprando</button>
+                    <button onclick="btnConsultar(event)" class="button-der" style="text-transform: capitalize;">Continuar</button>
+                </div>
+                <div class="content-mobile">
+                    <div class="banda"></div>
+                    <div class="img-whatsapp">
+                        <img src="img/carrito/carrito.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        $(document).ready(()=>{
+            carrito.detalleCarrito();
+        })
+    </script>
+</body>
+</html>

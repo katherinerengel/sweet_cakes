@@ -1,0 +1,213 @@
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapper-carrito {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    position: relative;
+}
+
+.wrapper-carrito .wrapper-izq {
+    width: 20%;
+    background-color: #B0EFEF;
+    height: 100vh;
+}
+
+.wrapper-izq .title {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.wrapper-izq .title img {
+    width: 15%;
+}
+
+.wrapper-izq .img-car img {
+    width: 20%;
+    position: absolute;
+    left: 90px;
+    bottom: 0;
+}
+
+.wrapper-der .logo {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.wrapper-der .container-table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-table .carrito-tabla {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.container-table .carrito-tabla table {
+    width: 100%;
+}
+
+.container-table .title-table {
+    background-color: #F498C2;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.container-table .title-table span {
+    color: #fafafa;
+    font-weight: 500;
+}
+
+.carrito-tabla table tr th {
+    color: #F498C2;
+    border-bottom: 1px solid gray;
+    padding: 5px 0;
+}
+
+.carrito-tabla table tr td {
+    padding: 5px;
+}
+
+.carrito-tabla table tr .td-center {
+    text-align: center;
+}
+
+.carrito-tabla table tr .td-center i {
+    font-size: 16px;
+    cursor: pointer;
+    color: red;
+}
+
+.div-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.div-button button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F498C2;
+    color: #fafafa;
+    font-size: 16px;
+    cursor: pointer;
+    width: 20%;
+    font-weight: 500;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+ /* para desktop */
+ @media (min-width: 1450px) {
+    .content-mobile {
+        display: none;
+    }
+    .wrapper-carrito .wrapper-der {
+        width: 80%;
+    }
+    .wrapper-der .logo img {
+        width: 20%;
+    }
+    .wrapper-der .container-table {
+        margin-top: 50px;
+    }
+    .container-table .title-table {
+        width: 60%;
+    }
+    .container-table .carrito-tabla {
+        width: 60%;
+        margin-top: 30px;
+    }
+    .carrito-tabla table tr td {
+        font-size: 13px;
+    }
+    .div-button .button-izq {
+        margin-right: 15px;
+    }
+
+    .div-button .button-der {
+        margin-right: 15px;
+    }
+
+    .carrito-grid {
+        display: none;
+    }
+ }
+
+   /* para mobile */
+@media (max-width: 500px) {
+    
+    .wrapper-izq {
+        display: none;
+    }
+    .wrapper-carrito .wrapper-der {
+        width: 100%;
+    }
+    .wrapper-der .logo img {
+        width: 35%;
+    }
+    .container-table .title-table {
+        width: 85%;
+        margin-top: 35px;
+    }
+    .container-table .title-table span {
+        font-size: 14px;
+    }
+    .container-table .carrito-grid{
+        width: 85%;
+        margin-top: 10px;
+    }
+
+    .carrito-tabla table tr td {
+        font-size: 12px;
+    }
+    /* .columna-oculta {
+        display: none;
+    } */
+    .div-button .button-izq {
+        margin-right: 10px;
+        width: 39%;
+        font-size: 15px;
+    }
+    
+    .div-button .button-der {
+        margin-right: 10px;
+        width: 39%;
+        font-size: 15px;
+    }
+
+    .content-mobile  {
+        margin-top: 5rem;
+        padding-top: 3rem;
+        position: relative;
+    }
+
+    .content-mobile .banda {
+        height: 129px;
+        background-color: #B0EFEF;
+        position: relative;
+    }
+
+    .content-mobile .img-whatsapp img {
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 24px;
+    }
+
+    .carrito-tabla {
+        display: none;
+    }
+}

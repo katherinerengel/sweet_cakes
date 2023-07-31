@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-categorias.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/redirect.js"></script>
+    <script type="module" src="js/moduleExport.js"></script>
+    <script type="module" src="js/funtionExport.js"></script>
+    <title>Mafer Sweet Cakes - Categorias</title>
+</head>
+<body>
+    <div class="carrito" onclick="btnCarrito(event)">
+        <div class="div-carrito">
+            <img src="img/categorias/carrito.png" alt="">
+            <div class="div-cant">
+                <span class="span-cant">0</span>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="logo">
+            <img src="img/categorias/logo.png" alt="">
+        </div>
+        <div class="img-central">
+            <img src="img/categorias/muneca.png" alt="">
+        </div>
+        <div class="wrapper-1">
+            <div class="boton-izquierdo boton">
+                    <button id="btn-cakesper">Cakes Personalizadas</button>
+            </div>
+            <div class="boton-central boton">
+                    <button id="btn-cakestra">Cakes Tradicionales</button>
+            </div>
+            <div class="boton-derecho boton">
+                    <button onclick="openPopupConst(event)">Desayunos Personalizados</button>
+            </div>
+        </div>
+        <div class="wrapper-2">
+            <div class="boton-izquierdo2 boton btn-izq">                     
+                <button id="btn-pasapalos">Pasapalos</button>
+            </div>
+            <div class="boton-derecho2 boton btn-der">
+                <button id="btn-postres">Postres</button>
+            </div>
+        </div>
+        <div class="img-final">
+            <img src="img/categorias/frasefinal.png" alt="">
+        </div>
+    </div>
+
+    <!-- <div class="popup-construccion" style="display: none;">
+        <div class="content-popup">
+            <div class="container-pop">
+                <img src="img/principal/info.png" alt="">
+                <span>Estamos trabajando para brindarle un mejor servicio.</span>
+            </div>
+            <div class="btn-popup">
+                <button onclick="closePopupConst(event)">Cerrar</button>
+            </div>
+        </div>
+    </div> -->
+    
+    <script>
+        $(document).ready(()=>{
+            main.init();
+            main.resizeMf('container');
+        })
+    </script>
+</body>
+</html>

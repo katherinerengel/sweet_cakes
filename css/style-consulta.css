@@ -1,0 +1,322 @@
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapper-carrito {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    position: relative;
+}
+
+.wrapper-carrito .wrapper-izq {
+    width: 20%;
+    background-color: #B0EFEF;
+    height: 100vh;
+}
+
+.wrapper-izq .title {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.wrapper-izq .title img {
+    width: 15%;
+}
+
+.wrapper-izq .img-car img {
+    width: 25%;
+    position: absolute;
+    left: 127px;
+    bottom: 30px;
+}
+
+.wrapper-der .logo {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.wrapper-der .container-formulario{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-formulario .subtitle{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.formulario .subtitle1 {
+    background-color: #F498C2;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.formulario .subtitle1 span {
+    color: #fafafa;
+    font-weight: 500;
+}
+
+.formulario .obligatorio {
+    color: red;
+}
+
+.datos-personales, .subtitle1, .pregunta, .horarios, .content-delivery {
+    margin-top: 10px;
+}
+
+
+.formulario input {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.formulario input:focus {
+    border-color: #F498C2;
+    outline: 0 none;
+}
+
+.formulario input::placeholder {
+    color: rgba(107, 107, 107, 0.3);
+}
+
+.formulario .pregunta {
+    display: flex;
+}
+
+.formulario .horarios {
+    display: flex;
+    width: 100%;
+}
+
+.formulario .horarios .calendar {
+    display: flex;
+    flex-direction: initial;
+    align-items: center;
+}
+
+.formulario .content-delivery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.formulario .content-delivery .delivery {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: initial;
+}
+
+.div-button {
+    margin-top: 45px;
+    text-align: center;
+}
+
+.div-button button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F498C2;
+    color: #fafafa;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.datos-personales .delivery {
+    display: flex;
+    align-items: center;
+}
+
+.datos-personales .delivery .check {
+    position: absolute;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #F498C2;
+}
+
+.datos-personales .delivery .check:checked {
+    color: white;
+}
+
+.datos-envio .delivery {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.datos-envio .delivery .check {
+    position: absolute;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #F498C2;
+}
+
+.calendar .label-delivery {
+    width: 25%;
+}
+
+input select:focus {
+    border-color: #F498C2;
+    outline: 0 none;
+}
+
+.div-collapse.open{
+    height: auto;
+    opacity: 1;
+    display: block;
+}
+
+.div-collapse.close{
+    height: 0px;
+    opacity: 0;
+    display: none;
+    transition: all 1ms ease-out;
+}
+
+ /* para desktop */
+ @media (min-width: 1450px) {
+    .wrapper-carrito .wrapper-der {
+        width: 80%;
+    }
+    .wrapper-der .logo img {
+        width: 20%;
+    }
+    .container-formulario .formulario {
+        width: 60%;
+    }
+    .formulario .subtitle1 {
+        width: 100%;
+    }
+    .formulario .pregunta {
+        flex-direction: initial;
+    }
+    .formulario .pregunta .label {
+        width: 25%;
+    }
+    .formulario input {
+        width: 80%;
+    }
+    .formulario .horarios {
+        flex-wrap: wrap;
+    }
+    .formulario .horarios .calendar {
+        width: 50%;
+    }
+    .datos-personales .delivery .check {
+        left: 128px;
+    }
+    .datos-personales .delivery {
+        margin-top: 10px;
+    }
+    .delivery .label-personales {
+        width: 50%;
+    }
+    .datos-envio .delivery .check {
+        left: 238px;
+    }
+    .div-button button {
+        width: 20%;
+    }
+    .content-mobile {
+        display: none;
+    }
+
+    
+    .label-hora {
+        margin-left: 1.5rem;
+    }
+
+ }
+
+  /* para mobile */
+@media (max-width: 500px) {
+    .wrapper-carrito .wrapper-der {
+        width: 100%;
+        font-size: 12px;
+    }
+    .wrapper-der .logo img {
+        width: 35%;
+    }
+    .container-formulario .formulario {
+        width: 85%;
+    }
+    .formulario .subtitle1 {
+        width: 94%;
+        margin-top: 20px;
+    }
+    .formulario .pregunta {
+        flex-direction: column;
+    }
+    .formulario .pregunta .label {
+        width: 100%;
+    }
+    .formulario input {
+        margin-top: 10px;
+    }
+    .formulario .horarios {
+        flex-direction: column;
+    }
+    .formulario .horarios .calendar {
+        flex-direction: row;
+        align-items: center;
+    }
+    .horarios .calendar input {
+        margin-top: 10px;
+        text-align: center
+    }
+    .datos-personales .delivery .check {
+        left: 199px;
+    }
+    .datos-envio {
+        margin-top: 30px;
+    }
+    .datos-personales .delivery {
+        margin-top: 15px;
+        margin-bottom: 35px;
+    }
+    .datos-envio .delivery {
+        flex-direction: row;
+        margin-bottom: 25px;
+    }
+    .datos-envio .delivery .check {
+        left: 312px;
+    }
+    .div-button button {
+        width: 60%;
+        margin-bottom: 102px;
+    }
+    .content-mobile {
+        padding-top: 3rem;
+        position: relative;
+    }
+
+    .content-mobile .banda {
+        height: 129px;
+        background-color: #B0EFEF;
+        position: relative;
+    }
+
+    .content-mobile .img-whatsapp img {
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 24px;
+    }
+
+    .wrapper-izq {
+        display: none;
+    }
+
+}
+
+
+

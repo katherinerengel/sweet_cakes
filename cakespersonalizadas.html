@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-cakespersonalizadas.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/redirect.js"></script>
+    <script type="module" src="js/moduleExport.js"></script>
+    <script type="module" src="js/funtionExport.js"></script>
+    <title>Mafer Sweet Cakes - Cakes Personalizadas</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="carrito-rosa" onclick="btnCarrito(event)">
+                <div class=" div-carrito">
+                    <img src="img/carrito/carrito.png" alt="">
+                    <div class="div-cant">
+                        <span class="span-cant">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="left-side">
+                <div class="wrapper-row">
+                    <div class="col-left">
+                        <div class="title-cakes">
+                            <img src="img/cakes-per/titulocakes.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-right">
+                        <div class="photos">
+                            <div class="photo1">
+                                <img src="img/cakes-per/cake1.jpg" alt="">
+                            </div>
+                            <div class="photo2">
+                                <img src="img/cakes-per/cake2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="logo">
+                    <img src="img/cakes-per/logo.png" alt="">
+                </div>
+                <div class="content-mobile">
+                    <div class="banda"></div>
+                    <div class="photos-mobile">
+                        <div class="photo1-mobile">
+                            <img src="img/cakes-per/cake1.jpg" alt="">
+                        </div>
+                        <div class="photo2-mobile">
+                            <img src="img/cakes-per/cake2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="subtitle-cakes">
+                    <span class="span-title">Cakes Personalizadas</span>
+                    <span>Haz tu combinación perfecta y ahora sí, armemos tu pedido.</span>
+                </div>
+                <div class="wrapper-select">
+                    <div class="col-select50">
+                        <div class="div-select">
+                            <label for="">Elige el tamaño <span style="color: red;">*</span></label>
+                            <select name="select" onchange="changeSelect(event)" data-field="tamano">
+                                <option value="value1">1/4 Kg aprox. 10-12 porciones</option>
+                                <option value="value2" selected>1/2 Kg aprox. 20-24 porciones</option>
+                                <option value="value3">1 Kg aprox. 40-45 porciones</option>
+                                <option value="value4">1 1/2 Kg aprox. 60 porciones</option>
+                                <option value="value5">2 Kg aprox. 80 porciones</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-select50">
+                        <div class="div-select">
+                            <label for="">Elige el sabor de la masa <span style="color: red;">*</span></label>
+                            <select name="select" onchange="changeSelect(event)" data-field="saborMasa">
+                                <option value="value1">Vainilla</option>
+                                <option value="value2" selected>Chocolate</option>
+                                <option value="value3">Marmoleada</option>
+                                <option value="value4">Parchita</option>
+                                <option value="value5">Limón</option>
+                                <option value="value6">Red Velvet</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-select50">
+                        <div class="div-select">
+                            <label for="">Escoge el relleno <span style="color: red;">*</span></label>
+                            <select name="select" onchange="changeSelect(event)" data-field="relleno">
+                                <option value="value1">Ganache de chocolate negro</option>
+                                <option value="value2" selected>Arequipe - Dulce de leche</option>
+                                <option value="value3">Crema pastelera</option>
+                                <option value="value4">Buttercream de oreo</option>
+                                <option value="value5">Buttercream de chocolate</option>
+                                <option value="value6">Pie de limón</option>
+                                <option value="value7">Pie de parchita</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-select50">
+                        <div class="div-select">
+                            <label for="">Elige la cubierta<span style="color: red;">*</span></label>
+                            <select name="select" onchange="changeSelect(event)" data-field="cubierta">
+                                <option value="value1">Merengue italiano</option>
+                                <option value="value2" >Buttercream</option>
+                                <option value="value3" selected>Ganache de chocolate</option>
+                                <option value="value4">Arequipe - Dulce de leche</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-select50">
+                        <div class="div-select">
+                            <label for="">Escoge tu cake topper<span style="color: red;">*</span></label>
+                            <select name="select"  onchange="changeSelect(event)" data-field="topper">
+                                <option value="value1">Sencillo</option>
+                                <option value="value2" selected>Personalizado</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-select100">
+                        <div class="div-textarea">
+                            <label for="">Escribe aquí más detalles como: temática, motivo de la celebración, nombre del agasajado, color predominante, etc.<span style="color: red;">*</span></label>
+                            <textarea onkeyup="inputKeypress(event)" placeholder="Es importante rellenar esta información." name="" id="" cols="30" rows="6" data-field="observacion"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="div-button">
+                        <button id="btn-return">Volver</button>
+                        <button onclick="btnGuardar(event)" id="btn-add">Añadir al carrito</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(()=>{
+            pedidos.initPedido('Cakes Personalizadas');
+        })
+    </script>
+</body>
+</html>

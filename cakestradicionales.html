@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-cakestradicionales.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/redirect.js"></script>
+    <script type="module" src="js/moduleExport.js"></script>
+    <script type="module" src="js/funtionExport.js"></script>
+    <title>Mafer Sweet Cakes - Tradicionales</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="carrito-rosa" onclick="btnCarrito(event)">
+                <div class=" div-carrito">
+                    <img src="img/carrito/carrito.png" alt="">
+                    <div class="div-cant">
+                        <span class="span-cant">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="left-side">
+                <div class="wrapper-row">
+                    <div class="col-left">
+                        <div class="title-cakes">
+                            <img src="img/cakes-tra/titulotra.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-right">
+                        <div class="photos">
+                            <div class="photo1">
+                                <img src="img/cakes-tra/piña.jpg" alt="">
+                            </div>
+                            <div class="photo2">
+                                <img src="img/cakes-tra/tresleches.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="logo">
+                    <img src="img/cakes-per/logo.png" alt="">
+                </div>
+                <div class="content-mobile">
+                    <div class="banda"></div>
+                    <div class="photos-mobile">
+                        <div class="photo1-mobile">
+                            <img src="img/cakes-tra/piña.jpg" alt="">
+                        </div>
+                        <div class="photo2-mobile">
+                            <img src="img/cakes-tra/tresleches.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="subtitle-cakes">
+                    <span class="span-title">Cakes Tradicionales</span>
+                    <span>Sección especial para los amantes de lo clásico.</span>
+                </div>
+                <div class="wrapper-select">
+                    <div class="col-select100">
+                        <div class="div-select">
+                            <label for="">Elige el tamaño <span style="color: red;">*</span></label>
+                            <select name="select" onchange="changeSelect(event)" data-field="tamano">
+                                <option value="value1">1/4 Kg aprox. 10-12 porciones</option>
+                                <option value="value2" selected>1/2 Kg aprox. 20-24 porciones</option>
+                                <option value="value3">1 Kg aprox. 40-45 porciones</option>
+                                <option value="value4">1 1/2 Kg aprox. 60 porciones</option>
+                                <option value="value5">2 Kg aprox. 80 porciones</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-select100">
+                        <div class="div-select">
+                            <label for="">Elige el sabor de la masa <span style="color: red;">*</span></label>
+                            <select name="select"  onchange="changeSelect(event)" data-field="saborMasa">
+                                <option value="value1">Torta de Vainilla</option> 
+                                <!-- Ponque esponjoso de vainilla con azúcar pulverizada -->
+                                <option value="value2">Torta de Piña</option> 
+                                <!-- Bizcocho esponjoso a base de zumo de piña, cubierta con caramelo, rodajas de piña y cerezas en almíbar -->
+                                <option value="value3" selected>Torta de Parchita</option>
+                                <!-- Relleno de crema pastelera de parchita, cobertura de merengue italiano y mermelada de parchita -->
+                                <option value="value4">Torta de Limón</option>
+                                <!-- Relleno de crema pastelera de limón, cobertura de merengue italiano y mermelada de limón -->
+                                <option value="value5">Torta Tres Leches</option>
+                                <!-- Bizcocho de vainilla humedecido con jugo de tres tipos de leches, relleno con crema pastelera o crema chantilly y cubierta de merengue italiano o crema chantilly -->
+                                <option value="value6">Choco - Arequipe</option>
+                                <!-- Torta húmeda de chocolate con relleno y cobertura de arequipe -->
+                                <option value="value7">Quesitorta</option>
+                                <!-- Una combinación perfecta de torta húmeda de chocolate y quesillo -->
+                                <option value="value8">Red Velvet</option>
+                                <!-- Bizcocho esponjoso de color rojo y cubierta con betún de queso crema -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-select100">
+                        <div class="div-select">
+                            <label for="">Escoge tu cake topper<span style="color: red;">*</span></label>
+                            <select name="select" onchange="changeSelect(event)" data-field="topper">
+                                <option value="value1">Sencillo</option>
+                                <option value="value2" selected>Personalizado</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-select100">
+                        <div class="div-textarea">
+                            <label for="">Observaciones.<span style="color: red;">*</span></label>
+                            <textarea onkeyup="inputKeypress(event)"  data-field="observacion" 
+                            placeholder="Escribe aquí alguna otra información que sea importante.." name="" id="" cols="10" rows="4"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="div-button">
+                        <button id="btn-return">Volver</button>
+                        <button id="btn-add" onclick="btnGuardar(event)">Añadir al carrito</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(()=>{
+            pedidos.initPedido('Cakes Tradicionales');
+        })
+    </script>
+</body>
+</html>

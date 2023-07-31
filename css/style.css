@@ -1,0 +1,89 @@
+/**Font Familys*/
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+/*Font icon Flaticon*/
+@import url("https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css");
+@import url("https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css");
+
+/*Alertas*/
+@import url("../popalert/popalert.css");
+
+
+* {
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  /* color: #6B6B6B; */
+}
+
+.div-button button:hover {
+  background-color: #B0EFEF;
+}
+
+.div-button button {
+  text-shadow: 1px 2px #99999982;
+}
+
+.carrito-rosa {
+  position: absolute;
+}
+
+.carrito-rosa img {
+  width: 30px;
+}
+
+
+.carrito-rosa .div-carrito {
+  position: relative;
+  padding: 0.2rem;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.carrito-rosa .div-carrito .div-cant {
+  position: absolute;
+  background-color: red;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrito-rosa .div-carrito .div-cant {
+  width: 15px;
+  height: 15px;
+  top: 0;
+  right: -4px;
+}
+
+.carrito-rosa .div-carrito .div-cant .span-cant{
+  font-size: 11px;
+  color: white;
+}
+
+.logo img {
+  cursor: pointer;
+}
+
+
+
+
+   /* para desktop */
+   @media (min-width: 1450px) {
+    .carrito-rosa {
+        top: 40px;
+        right: 50px;
+    }
+   }
+
+   /* para mobile */
+  @media (max-width: 500px) {
+    .carrito-rosa {
+        top: 15px;
+        right: 25px;
+    }
+  }

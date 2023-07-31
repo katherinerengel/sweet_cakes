@@ -1,0 +1,376 @@
+.container {
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.left-side {
+    width: 30%;
+    background-color: #B0EFEF;
+    height: 100vh;
+}
+
+
+.right-side {
+    background-color: #FBFBFB;
+}
+
+.right-side {
+    text-align: center;
+}
+
+.right-side .subtitle-cakes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.subtitle-cakes span {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.subtitle-cakes .span-title {
+    text-align: center;
+    font-size: 17px;
+    color: #F498C2;
+    font-weight: 600;
+}
+
+.wrapper-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper-row .col-left{
+    width: 30%
+}
+
+.wrapper-row .col-right{
+    width: 70%
+}
+
+.photos img {
+    width: 65%;
+    margin-top: 25px;
+    border: 10px solid #FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.left-side .title-cakes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.left-side .title-cakes img {
+    width: 30%;
+    margin-left: 40px;
+}
+
+.wrapper-select {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.col-select70 {
+    width: 70%;
+}
+.col-select20 {
+    width: 20%;
+}
+.col-select10 {
+    width: 10%;
+}
+
+.col-select10 img {
+    width: 31% !important;
+    margin-left: 14px !important;
+}
+
+.div-select {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+    margin-top: 15px;
+}
+
+.div-select .img-add{
+ cursor: pointer;
+}
+
+.div-select label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.div-select select {
+    padding: 3px 3px;
+    border: 1px solid #6B6B6B;
+    border-radius: 5px;
+}
+
+.div-select select:focus {
+    border-color: #F498C2;
+    outline: 0 none;
+}
+
+.div-textarea {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+    margin-top: 15px;
+}
+
+.div-textarea label {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.div-textarea textarea {
+    border-radius: 5px;
+    resize: none;
+    padding: 10px;
+}
+
+.div-textarea textarea::placeholder {
+    color: rgba(107, 107, 107, 0.3);
+}
+
+.div-textarea textarea:focus {
+    border-color: #F498C2;
+    outline: 0 none;
+}
+
+.div-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.div-button button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F498C2;
+    color: #fafafa;
+    font-size: 16px;
+    cursor: pointer;
+    width: 20%;
+}
+
+.div-button #btn-return {
+    margin-right: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.div-button #btn-add {
+    margin-left: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.postre-tabla {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.postre-tabla table{
+    width: 100%;
+}
+
+.postre-tabla .title-table {
+    background-color: #F498C2;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.postre-tabla .title-table span {
+    color: #fafafa;
+    font-weight: 500;
+}
+
+.postre-tabla table tr th {
+    color: #F498C2;
+    border-bottom: 1px solid gray;
+    padding: 5px 0;
+}
+
+.postre-tabla table tr td {
+    padding: 5px;
+}
+
+.postre-tabla table tr .td-cantidad {
+    text-align: center;
+}
+
+.postre-tabla table tr .td-delete i {
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    color: red;
+}
+
+.postre-tabla table tr .td-desc {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.postre-tabla table tr .th-desc {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.col-ktm-100 .div-agregar {
+    align-items: center !important;
+}
+
+ /* para desktop */
+ @media (min-width: 1450px) {
+
+    .content-mobile {
+        display: none;
+    }
+    .right-side {
+        width: 70%;
+        margin-top: 30px;
+    }
+    .right-side img {
+        width: 20%;
+    }
+
+    .wrapper-select {
+        padding: 0 170px 0 183px;
+    }
+    .div-select select {
+        width: 90%;
+    }
+    .div-textarea textarea {
+        width: 67%;
+    }
+
+    .div-button button {
+        width: 35%;
+    }
+
+    .postre-grid {
+        display: none;
+    }
+
+
+ }
+
+ /* para mobile */
+@media (max-width: 500px) {
+
+    .left-side {
+        display: none;
+    }
+    .right-side {
+        width: 100%;
+        padding: 30px 0px;
+    }
+    .right-side img {
+        width: 40%;
+    }
+    .col-select50 {
+        width: 100%;
+    }
+    .wrapper-select {
+        padding: 0 35px 0 35px;
+    }
+    .div-select select {
+        width: 100%;
+    }
+    .div-textarea textarea {
+        width: 95%;
+    }
+
+    .div-button{
+        margin-bottom: 40px;
+    }
+
+    .div-button button {
+        width: 60%;
+    }
+
+    .postre-tabla {
+        display: none;
+    }
+
+    .col-ktm-100 .div-agregar {
+        flex-direction: initial !important;
+    }
+
+    .col-ktm-100 .div-agregar label {
+        margin-bottom: 0px; 
+        margin-right: 10px;
+    }
+
+    .col-ktm-100 .div-agregar img {
+        width: 7% !important;
+    }
+
+
+}
+
+.content-mobile {
+    width: 100%;
+    position: relative;
+    padding: 42px 0;
+    margin-top: 15px;
+}
+
+.content-mobile .banda {
+    width: 100%;
+    height: 100px;
+    background-color: #B0EFEF;
+}
+
+.content-mobile .photos-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
+
+.content-mobile .photos-mobile img {
+    width: 65%;
+    border: 6px solid #FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+}
+
+.photos-mobile .photo1-mobile  {
+    text-align: right;
+    width: 50%;
+}   
+
+.photos-mobile .photo2-mobile {
+    text-align: left;
+    width: 50%;
+}   
+
+.photos-mobile .photo1-mobile img {
+    margin-right: 10px;
+}   
+
+.photos-mobile .photo2-mobile img {
+    margin-left: 10px;
+}  
+

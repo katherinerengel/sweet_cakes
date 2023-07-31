@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-grid.css">
+    <link rel="stylesheet" href="css/style-postres.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/redirect.js"></script>
+    <script type="module" src="js/moduleExport.js"></script>
+    <script type="module" src="js/funtionExport.js"></script>
+    <title>Mafer Sweet Cakes - Postres</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="carrito-rosa" onclick="btnCarrito(event)">
+                <div class=" div-carrito">
+                    <img src="img/carrito/carrito.png" alt="">
+                    <div class="div-cant">
+                        <span class="span-cant">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="left-side">
+                <div class="wrapper-row">
+                    <div class="col-left">
+                        <div class="title-cakes">
+                            <img src="img/postres/titulopostres.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-right">
+                        <div class="photos">
+                            <div class="photo1">
+                                <img src="img/postres/postre1.jpeg" alt="">
+                            </div>
+                            <div class="photo2">
+                                <img src="img/postres/postre2.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="logo">
+                    <img src="img/cakes-per/logo.png" alt="">
+                </div>
+                <div class="content-mobile">
+                    <div class="banda"></div>
+                    <div class="photos-mobile">
+                        <div class="photo1-mobile">
+                            <img src="img/postres/postre1.jpeg" alt="">
+                        </div>
+                        <div class="photo2-mobile">
+                            <img src="img/postres/postre2.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="subtitle-cakes">
+                    <span class="span-title">Postres</span>
+                    <span>Disfruta de las porciones más deliciosas.</span>
+                </div>
+                <div class="wrapper-select">
+                    <div class="row-kt">
+                        <div class="col-ktd-85  col-ktm-100">
+                            <div class="row-kt">
+                                <div class="col-ktd-70 col-ktm-100">
+                                    <div class="div-select">
+                                        <label for="">Elige el postre de tu preferencia</label>
+                                        <select name="select" data-field="detalle">
+                                            <option value="value1" selected>Porción de torta tres leches</option>
+                                            <!-- Bizcocho de vainilla humedecido con jugo de tres tipos de leches, relleno con crema pastelera o crema chantilly y cubierta de merengue italiano o crema chantilly -->
+                                            <option value="value2" >Porción de torta de piña</option>
+                                            <!-- Bizcocho esponjoso a base de zumo de piña, cubierta con caramelo, rodajas de piña y cerezas en almíbar -->
+                                            <option value="value3">Porción de torta de vainilla</option>
+                                            <!-- Ponque esponjoso de vainilla con azúcar pulverizada -->
+                                            <option value="value4">Porción de quesitorta</option>
+                                            <!-- Una combinación perfecta de torta húmeda de chocolate y quesillo -->
+                                            <option value="value5">Porción de torta húmeda de chocolate</option>
+                                            <!-- Torta húmeda de chocolate con relleno y cobertura de arequipe -->
+                                            <option value="value6">Porción de marquesa de limón</option>
+                                            <option value="value7">Porción de marquesa de parchita</option>
+                                            <option value="value8">Porción de marquesa de coco</option>
+                                            <option value="value9">Porción de marquesa de oreo</option>
+                                            <option value="value10">Porción de marquesa de samba</option>
+                                            <option value="value11">Porción de quesillo</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-ktd-30 col-ktm-100">
+                                    <div class="div-select">
+                                        <label for="">Cantidad</label>
+                                        <select name="select" data-field="cantidad">
+                                            <option value="value1" selected>1 unidad</option>
+                                            <option value="value2">2 unidades</option>
+                                            <option value="value3">3 unidades</option>
+                                            <option value="value4">4 unidades</option>
+                                            <option value="value5">5 unidades</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-ktd-15 col-ktm-100">
+                            <div class="div-select div-agregar">
+                                <label for="">Agregar</label>
+                                <img class="img-add" src="img/postres/plus-circle.png" alt="" onclick="btnAnadir(event, 'mf-tbody')">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="postre-tabla">
+                        <table style="border-collapse: collapse;">
+                            <thead> 
+                                <tr>
+                                    <th class="th-desc">Descripción</th>
+                                    <th>Cantidad</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="mf-tbody">
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="postre-grid">
+                        <div class="grid-kt">
+                            <div class="grid-header">
+                                <div class="colm-1">Tipo</div>
+                                <div class="colm-2">Acción</div>
+                            </div>
+                            <div id="mf-tbody-mobile" class="grid-body">
+    
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="div-button">
+                            <button id="btn-return">Volver</button>
+                            <button id="btn-add"  onclick="btnGuardarPostres(event)">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(()=>{
+            pedidos.initPedido('Postres', true);
+        })
+    </script>
+</body>
+</html>

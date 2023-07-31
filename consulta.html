@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-grid.css">
+    <link rel="stylesheet" href="css/style-consulta.css">    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="sweetalert/sweetalert2.all.js"></script>
+    <script src="js/redirect.js"></script>
+    <script type="module" src="js/moduleExport.js"></script>
+    <script type="module" src="js/funtionExport.js"></script>
+    <title>Mafer Sweet Cakes - Tu Consulta</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper-carrito">
+            <div class="wrapper-izq">
+                <div class="title">
+                    <img src="img/consulta/tuconsulta.png" alt="">
+                </div>
+                <div class="img-car">
+                    <img src="img/consulta/whatsapp.png" alt="">
+                </div>
+            </div>
+            <div class="wrapper-der">
+                <div class="logo">
+                    <img src="img/cakes-per/logo.png" alt="">
+                </div>
+                <div class="container-formulario">
+                    <div class="subtitle">
+                        <span>Ya casi terminamos</span>
+                    </div>
+                    <div class="formulario">
+                        <div class="subtitle1">
+                            <span>Datos de contacto</span>
+                        </div>
+                        <div class="datos-personales">
+                            <div class="row-kt pregunta">
+                                <div class="col-ktd-25 col-ktm-100 label">
+                                    <label>Nombre y Apellido<span class="obligatorio">*</span></label>
+                                </div>
+                                <div class="col-ktd-75 col-ktm-100">
+                                    <input type="text" class="input-kt" name="nombre" field="datos" onkeyup="inputActualizar(event)">
+                                </div>
+                            </div>
+                            <div class="row-kt pregunta">
+                                <div class="col-ktd-25 col-ktm-100 label">
+                                    <label>Teléfono de contacto<span class="obligatorio">*</span></label>
+                                </div>
+                                <div class="col-ktd-75 col-ktm-100">
+                                    <input type="text" class="input-kt" name="telefono" field="datos" onkeyup="inputActualizar(event)">
+                                </div>
+                            </div>
+                            <div class="row-kt horarios">
+                                <div class="col-ktd-50  col-ktm-100 calendar">
+                                    <div class="row-kt horarios">
+                                        <div class="col-ktd-50 col-ktm-100">
+                                            <label for="">Fecha de entrega</label>
+                                        </div>
+                                        <div class="col-ktd-50  col-ktm-100">
+                                            <input type="date" class="input-kt" id="start-date"
+                                           value="" min="2000-01-01" max="2040-12-31" name="fecha">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-ktd-50  col-ktm-100 calendar">
+                                    <div class="row-kt horarios">
+                                        <div class="col-ktd-50 col-ktm-100">
+                                            <label for="" class="label-hora">Hora de entrega</label>
+                                        </div>
+                                        <div class="col-ktd-50 col-ktm-100">
+                                            <input type="time" id="start-time" class="input-kt" value="" name="hora">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-kt delivery">
+                                <div class="col-ktd-25 col-ktm-50 label-delivery">
+                                    <label for="">¿Necesitas delivery?</label>
+                                </div>
+                                <div class="col-ktd-75 col-ktm-50">
+                                    <input type="checkbox" class="check-kt" name="delivery" onchange="changeCheckCollapse(event)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="div-collapse close">
+                            <div class="subtitle1">
+                                <span>Datos para la entrega</span>
+                            </div>
+                            <div class="datos-envio">
+                                <div class="row-kt delivery">
+                                    <div class="col-ktd-50 col-ktm-70 label-personales">
+                                        <label for="">¿Son los mismos datos personales?</label>
+                                    </div>
+                                    <div class="col-ktd-50  col-ktm-30">
+                                        <input type="checkbox" class="check-kt" name="deliveryCopy" onchange="changeCheckComplite(event)">
+                                    </div>
+                                </div>
+                                <div class="row-kt pregunta">
+                                    <div class="col-ktd-25  col-ktm-100 label">
+                                        <label>Nombre y Apellido<span class="obligatorio">*</span></label>
+                                    </div>
+                                    <div class="col-ktd-75  col-ktm-100">
+                                        <input type="text" name="nombreEnvio" fieldCopy="nombre" class="input-kt">
+                                    </div>
+                                </div>
+                                <div class="row-kt pregunta">
+                                    <div class="col-ktd-25  col-ktm-100 label">
+                                        <label>Teléfono de contacto<span class="obligatorio">*</span></label>
+                                    </div>
+                                    <div class="col-ktd-75  col-ktm-100">
+                                        <input type="text" name="telefonoEnvio" fieldCopy="telefono" class="input-kt">
+                                    </div>
+                                </div>
+                                <div class="row-kt pregunta">
+                                    <div class="col-ktd-25  col-ktm-100 label">
+                                        <label>Dirección completa<span class="obligatorio">*</span></label>
+                                    </div>
+                                    <div class="col-ktd-75  col-ktm-100">
+                                        <input type="text"class="input-kt" placeholder="(av, calle, numero, piso, etc)" name="direccionEnvio">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>               
+                <div class="div-button">
+                    <button id="btn-add"  onclick="enviarWhatsapp(event)">Consultar precio</button>
+                </div>
+                <div class="content-mobile">
+                    <div class="banda"></div>
+                    <div class="img-whatsapp">
+                        <img src="img/consulta/whatsapp.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(()=>{
+            contactos.init();
+        })
+    </script>
+</body>
+</html>

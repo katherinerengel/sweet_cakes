@@ -1,0 +1,170 @@
+
+kt-select {
+    width: 98%;
+    border: 1px solid;
+    background-color: white;
+    text-align: start;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 14px !important;
+    font-weight: 400;
+    color: #212121;
+}
+
+kt-select-value.kt-marcador::before {
+    color: #afafaf !important;
+}
+
+kt-select-value::before {
+    content: attr(data-content);
+    margin-left: 5px;
+}
+
+kt-select.focus {
+    border: 1px solid #f498c2;
+}
+
+
+kt-options-mobile.close {
+ display: none;
+}
+
+kt-options.close {
+    display: none;
+   }
+
+kt-options-mobile .div-options {
+    width: 90%;
+}
+
+kt-option {
+    width: 100%;
+    text-wrap: nowrap;
+    display: block;
+    cursor: default;
+}
+
+kt-option label {
+    display: block;
+    margin-bottom: 0 !important;
+    font-size: inherit !important;
+}
+
+kt-option:hover {
+    background-color: #0074cc;
+    color: white !important;
+}
+
+kt-option label:hover {
+    color: white !important;
+}
+
+kt-option[select] {
+    background-color: #0074cc;
+    color: white !important;
+}
+
+kt-option[select] label {
+    color: white !important;
+}
+
+kt-select-icon {
+    float: right;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+
+
+ /* para desktop */
+ @media (min-width: 1450px) {
+    kt-select {
+        position: relative;
+    }
+
+    kt-options-mobile {
+        position: absolute;
+        left: 0;
+        top: 27px;
+        min-width: 100%;
+        z-index: 1011;
+    }
+
+    kt-options-mobile .div-options {
+        width: 90%;
+        background-color: white;
+        border: 1px solid;
+        border-radius: 5px;
+        padding: 0.5rem 0;
+        min-width: 100%;
+    }
+
+    kt-options-mobile .div-options .btn-select-multiple {
+        display: none;
+    }
+
+    kt-options {
+        text-wrap: nowrap;
+    }
+    
+    kt-option label {
+        padding: 0.2rem 0.6rem;
+    }
+
+    kt-option label input {
+        margin-right: 10px;
+        transform: scale(1.2);
+    }
+ }
+
+/* para mobile */
+@media (max-width: 500px) {
+    kt-options-mobile {
+        position: fixed;
+        background-color: rgb(181 181 181 / 35%);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    kt-options-mobile .div-options {
+        width: 96%;
+        background-color: white;
+        border: 1px solid;
+        border-radius: 10px;
+        padding: 0.5rem 0 0 0;
+    }
+
+    kt-options-mobile .div-options .btn-select-multiple {
+        width: 100%;
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid #0074cc;
+        border-radius: 0px 0px 5px 5px;
+        padding: 0.3rem;
+        background-color: #0074cc;
+        color: white;
+        text-shadow: 1px 2px #99999982;
+        font-size: 15px !important;
+    }
+
+    kt-options {
+        text-wrap: nowrap;
+    }
+    
+    kt-option label {
+        padding: 0.5rem 1rem;
+    }
+
+    kt-option label input {
+        margin-right: 10px;
+        transform: scale(1.5);
+    }
+}
